@@ -11,7 +11,7 @@ Your goal is to orchestrate subagents to implement ALL pending tasks in a Kiro s
 1. Search for `tasks.md` files in `.kiro/specs/`.
 2. **FILTER:** Exclude any paths containing the string `--complete--` (these are already done).
 3. Sort the remaining files by their directory prefix (e.g. `03`, `04`) to ensure sequential processing.
-4. Select the first `tasks.md` file found.
+4. Select the first `tasks.md` file found. Once you completed this tasks file, you should **NOT** take the next tasks file.
 5. If no `tasks.md` is found in a non-complete directory, stop and report "No pending specs found".
 
 ## 2. Parse and Clean Tasks
@@ -31,6 +31,7 @@ For EACH pending task, in order:
 
 ### 3.1 Mark Task In-Progress
 1. Edit `tasks.md` to change the current task status from `[ ]` to `[-]`.
+If you use a todo tool, only keep todos for the current task in the list, the last todo should be about starting the next todo.
 
 ### 3.2 Spawn Subagent
 1. Use the Task tool to spawn a `general` subagent with a detailed prompt that includes:
@@ -47,15 +48,23 @@ For EACH pending task, in order:
    
    TASK FILE: [path to tasks.md]
    TASK TO IMPLEMENT: [exact task text]
+
+   Context: 
+   - This is a monorepo (apps/extension, apps/web, packages/shared).
+   - Local packages are source code and must be transpiled by bundlers.
    
     Instructions:
     1. Read the tasks.md and any sibling files (design.md, requirements.md) for context
     2. Implement the task completely - write code, create files, refactor as needed
-    3. Run the project's build command and ALL relevant tests to verify your work
-    4. CRITICAL: If the build or tests fail, you MUST fix the issues and re-run them until they pass before reporting completion.
+    3. **Verification & Quality (CRITICAL):**
+       - **Lint:** Run `npx eslint --fix <file>` on ALL modified files. Ensure no import order errors remain.
+       - **Build:** If creating/modifying assets or running E2E tests, run `npm run build` first.
+       - **Test:** Run `npm test` from the **ROOT** directory to catch cross-workspace issues (especially if modifying shared code).
+       - **Mocks:** If modifying shared code, search for and update relevant mocks in other workspaces.
+    4. If the build or tests fail, you MUST fix the issues and re-run them until they pass before reporting completion.
     5. Report back:
        - What you implemented
-       - Confirmation that the build and tests passed successfully
+       - Confirmation that lint, build, and tests passed
        - Any issues you encountered and how you fixed them
 
 
@@ -70,7 +79,7 @@ For EACH pending task, in order:
    - Update your todo list to mark this task as completed.
    - Create a git commit:
      - Stage all changes (`git add .`)
-     - Commit with message "kiro: [task description]" (e.g. "kiro: Add login page")
+     - Commit with message "[task description]" (e.g. "Add login page")
 3. If the subagent reports FAILURE or issues:
    - Spawn a NEW subagent to fix the issues or retry the task.
    - Repeat until the task is successfully completed.
