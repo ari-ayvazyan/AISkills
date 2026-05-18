@@ -1,6 +1,7 @@
 ---
 name: create-agent-skills
 description: Expert guidance for Claude Code Skills. Use when working with SKILL.md files, authoring new skills, improving existing skills, or understanding skill structure.
+disable-model-invocation: true
 ---
 
 <essential_principles>

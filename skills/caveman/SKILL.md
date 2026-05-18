@@ -3,6 +3,7 @@ name: caveman
 description: >
   Ultra-compressed communication mode.
   Use when user says "caveman mode" or invokes /caveman.
+disable-model-invocation: true
 ---
 
 Respond like smart caveman. All technical substance stay. Only fluff die.

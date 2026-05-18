@@ -5,6 +5,7 @@ description: >
   search rankings, add meta tags, create structured data, generate sitemaps,
   optimize for Core Web Vitals, or analyze SEO issues. Works with Next.js, Astro,
   React, and static HTML sites.
+disable-model-invocation: true
 ---
 
 # SEO Optimizer

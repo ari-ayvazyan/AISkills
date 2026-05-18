@@ -2,6 +2,7 @@
 name: favicon-generator
 description: >
   Generate professional-quality favicons. Trigger when you need favicons, app icons, or browser tab icons.
+disable-model-invocation: true
 ---
 
 # Pro-Grade Favicon Generator

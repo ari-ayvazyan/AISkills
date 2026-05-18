@@ -1,6 +1,7 @@
 ---
 name: generate-app-names
 description: Generates strategic product and application names using linguistic engineering. Trigger when invoked with /generate-app-names
+disable-model-invocation: true
 ---
 
 <essential_principles>

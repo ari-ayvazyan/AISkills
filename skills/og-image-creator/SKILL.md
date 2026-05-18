@@ -3,7 +3,7 @@ name: og-image-creator
 description: >
   Smart OG image generation that studies your codebase, understands routes and brand identity,
   then creates contextually appropriate Open Graph images using Playwright and React components.
-  Triggers: "create og images", "generate social cards", "add open graph images".
+disable-model-invocation: true
 ---
 
 # OG Image Creator

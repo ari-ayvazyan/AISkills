@@ -1,6 +1,7 @@
 ---
 name: color-architect
 description: Generates strategic color palettes. Use when creating or updating app color schemes, theming, or brand colors.
+disable-model-invocation: true
 ---
 
 <essential_principles>
