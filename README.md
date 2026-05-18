@@ -13,12 +13,11 @@ Copy the commands and skills folder into your cli agent dir. eg. .claude/
 Install all skills from this repo into your user-global Claude Code skills directory (`~/.claude/skills/`):
 
 ```bash
-npx skills add ari-ayvazyan/AISkills
+npx skills add ari-ayvazyan/AISkills --all
 ```
 
 Flags:
 - `-g` — install to your user directory instead of the current project
-- `--all` — skip the interactive picker and install every skill
 
 ## Update / Remove
 
