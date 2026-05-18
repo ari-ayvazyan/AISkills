@@ -1,6 +1,6 @@
 ---
 name: generate-app-names
-description: Generates strategic product and application names using linguistic engineering, cognitive psychology, and brand positioning principles. Use when naming apps, products, companies, features, or needing creative naming assistance.
+description: Generates strategic product and application names using linguistic engineering. Trigger when invoked with /generate-app-names
 ---
 
 <essential_principles>

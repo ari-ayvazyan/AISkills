@@ -1,6 +1,6 @@
 ---
 name: color-architect
-description: Generates strategic color palettes for web applications based on project analysis, then applies them to the theme configuration. Use when creating or updating app color schemes, theming, or brand colors.
+description: Generates strategic color palettes. Use when creating or updating app color schemes, theming, or brand colors.
 ---
 
 <essential_principles>

@@ -1,11 +1,7 @@
 ---
 name: favicon-generator
 description: >
-  Generate professional-quality favicons that rival the best app icons. Uses a
-  multi-layer effects engine with drop shadows, inner glows, highlights, gradients,
-  and noise textures. Includes 8 curated design templates and 18 Lucide icons.
-  Produces complete favicon suites with proper ICO, SVG, PNG formats and framework
-  integration. Trigger when users need favicons, app icons, or browser tab icons.
+  Generate professional-quality favicons. Trigger when you need favicons, app icons, or browser tab icons.
 ---
 
 # Pro-Grade Favicon Generator
@@ -17,7 +13,7 @@ Create stunning, professional-quality favicons that stand alongside icons from L
 The difference between a mediocre favicon and a great one isn't complexity—it's **polish**. Great favicons have:
 
 - **Depth**: Subtle shadows that lift the icon off the surface
-- **Lighting**: Highlights and gradients that create dimensionality  
+- **Lighting**: Highlights and gradients that create dimensionality
 - **Texture**: Optional noise/grain that adds organic feel
 - **Precision**: Optical centering, proper padding, crisp edges
 
@@ -80,7 +76,7 @@ If using lucide-react or similar libraries:
    pip install cairosvg
    brew install cairo  # macOS - required native library
    ```
-   
+
    **Why cairosvg?** Pillow cannot render SVG bezier curves and arcs. Lucide icons
    use arc commands (`a2 2 0 0 0...`) that only a proper SVG renderer can draw.
 
@@ -106,8 +102,8 @@ SVG_TEMPLATE = """<svg xmlns="http://www.w3.org/2000/svg" width="{size}" height=
     </linearGradient>
   </defs>
   <rect width="{size}" height="{size}" rx="{radius}" fill="url(#bg)"/>
-  <g transform="translate({offset}, {offset}) scale({scale})" 
-     stroke="#ffffff" stroke-width="2" fill="none" 
+  <g transform="translate({offset}, {offset}) scale({scale})"
+     stroke="#ffffff" stroke-width="2" fill="none"
      stroke-linecap="round" stroke-linejoin="round">
     <!-- Exact Lucide PackagePlus paths -->
     <path d="M16 16h6"/>
@@ -124,7 +120,7 @@ def render_lucide_icon(size):
     scale = (size * 0.7) / 24
     offset = size * 0.15
     radius = int(size * 0.22)
-    
+
     svg = SVG_TEMPLATE.format(size=size, scale=scale, offset=offset, radius=radius)
     png_data = cairosvg.svg2png(bytestring=svg.encode('utf-8'))
     return Image.open(BytesIO(png_data)).convert('RGBA')
@@ -175,7 +171,7 @@ Open in browser for real-time preview and customization:
 
 **Best for**: Quick iteration, visual exploration, client demos
 
-### Tool 2: Python CLI Pipeline  
+### Tool 2: Python CLI Pipeline
 **File**: `scripts/generate_favicon.py`
 
 Command-line generation with Pillow:
@@ -398,31 +394,31 @@ Claude:
    - Searches codebase: rg "from.*lucide-react"
    - Finds: Header.tsx uses PackagePlus icon
    - Checks: No existing favicon, but brand uses PackagePlus
-   
+
 2. [Analyzes codebase]
    - tailwind.config.ts: primary = "#6366f1"
    - Package name: "flowboard"
    - Brand icon: PackagePlus (from lucide-react)
-   
+
 3. [Selects approach]
    - Option A: Match brand icon (PackagePlus) → Extract paths from lucide-react
    - Option B: Use letter "F" (distinctive, good at small sizes)
    - Decision: Use PackagePlus to match brand identity
    - Style: "Modern" (professional SaaS)
    - Colors: Use brand indigo
-   
+
 4. [Extracts icon paths]
    - Reads: node_modules/lucide-react/dist/esm/icons/package-plus.js
    - Extracts SVG paths and converts 24x24 → 32x32
-   
+
 5. [Generates with Python script]
    python generate_packageplus_favicon.py --output ./public/
-   
+
 6. [Integrates with Next.js]
    Updates app/layout.tsx with metadata.icons
-   
+
 7. [Delivers]
-   "Created favicon suite matching your PackagePlus brand icon. 
+   "Created favicon suite matching your PackagePlus brand icon.
    The favicon now matches your Header logo exactly—check the browser tab preview."
 ```
 
@@ -435,27 +431,27 @@ Claude:
 1. [Discovers existing icons]
    - Searches: rg "Icon|Logo" --type tsx
    - Finds: No existing brand icons, new project
-   
+
 2. [Considers personality]
    - Developer audience → technical, minimal
    - CLI context → terminal icon fits well
-   
+
 3. [Selects approach]
    - Content: Terminal icon from Lucide (extract actual paths)
    - Style: "Minimal" (dark, understated)
    - Effects: Subtle shadow, slight noise
-   
+
 4. [Extracts Terminal icon paths]
    - Reads: node_modules/lucide-react/dist/esm/icons/terminal.js
    - Converts paths to favicon coordinate system
-   
+
 5. [Opens HTML generator for preview]
    Shows user the terminal icon in minimal style
-   
+
 6. [Adjusts based on feedback]
    User: "Can we make it more techy?"
    → Switches to "Neon" style with cyan glow
-   
+
 7. [Generates final suite]
    Downloads all sizes, integrates with project
 ```
@@ -470,15 +466,15 @@ Claude:
    - Content: Rocket icon (not emoji for consistency)
    - Style: "Vibrant" (pink→orange, energetic)
    - Effects: Strong shadow, highlight, no noise
-   
+
 2. [Previews in context]
    Shows browser tab mockup, bookmark bar
-   
+
 3. [Generates]
    Full suite with all sizes
-   
+
 4. [Delivers with context]
-   "Here's your rocket favicon in vibrant colors. The icon 
+   "Here's your rocket favicon in vibrant colors. The icon
    stays crisp even at 16px. I've included the apple-touch-icon
    for when users add to their phone home screen."
 ```
