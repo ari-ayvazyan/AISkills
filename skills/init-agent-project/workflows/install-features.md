@@ -12,13 +12,12 @@ Use the host agent's native multi-select question tool. Present these options (n
 - **Playwright MCP** — browser automation / screenshots via `@playwright/mcp`
 - **Nano Banana image MCP** — AI image generation/editing (needs `GEMINI_API_KEY`)
 - **UI Verification playwright instructions** — before/after screenshot review on UI changes (works best with Playwright MCP)
-- **Architecture decision documentation** — `architecture_log.md` capturing WHY/WHAT of technical decisions, read before deciding
 
 If the agent has no question tool, fall back to a numbered multi-choice text prompt.
 
 ## Step 2: Note dependencies
 
-- **UI Verification** and **Architecture decision documentation** are instruction-only (they edit `AGENTS.md`); they don't install software.
+- **UI Verification** is instruction-only (it edits `AGENTS.md`); it doesn't install software.
 - UI Verification relies on the **Playwright MCP**. If the user picked UI Verification but not Playwright MCP, point this out and suggest adding it.
 
 ## Step 3: Run the selected workflows in order
@@ -27,7 +26,6 @@ For each selected feature, run its workflow and use the **selected-agents list**
 - Playwright MCP → `workflows/install-playwright-mcp.md`
 - Nano Banana image MCP → `workflows/install-nano-banana-mcp.md`
 - UI Verification → `workflows/add-ui-verification.md`
-- Architecture decision documentation → `workflows/add-architecture-log.md`
 
 ## Step 4: Summarize
 

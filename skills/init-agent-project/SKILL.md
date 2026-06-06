@@ -30,7 +30,7 @@ This skill runs as a short linear pipeline. Unless the user asks for a single su
 1. `workflows/setup-agent-files.md` — ask which agents to support, then write `AGENTS.md` + any needed stub files.
 2. `workflows/install-features.md` — ask which features to install, then run the matching install workflow(s).
 
-**If the user explicitly wants just one piece** (e.g. "just add UI verification", "only install playwright", "set up the architecture log"), use the routing table to jump straight there. Otherwise begin at `setup-agent-files.md`.
+**If the user explicitly wants just one piece** (e.g. "just add UI verification", "only install playwright"), use the routing table to jump straight there. Otherwise begin at `setup-agent-files.md`.
 
 Always present the agent and feature choices through the host agent's native question tool (see Principle 3).
 </intake>
@@ -44,7 +44,6 @@ Always present the agent and feature choices through the host agent's native que
 | "playwright mcp", "browser automation" | `workflows/install-playwright-mcp.md` |
 | "nano banana", "image generation mcp" | `workflows/install-nano-banana-mcp.md` |
 | "ui verification", "screenshot before/after" | `workflows/add-ui-verification.md` |
-| "architecture log", "decision documentation", "ADR" | `workflows/add-architecture-log.md` |
 
 **After reading the workflow, follow it exactly.**
 </routing>
@@ -65,7 +64,6 @@ Always present the agent and feature choices through the host agent's native que
 | install-playwright-mcp.md | Install the Playwright MCP for each selected agent |
 | install-nano-banana-mcp.md | Install the Nano Banana image MCP (with prompted `GEMINI_API_KEY`) per agent |
 | add-ui-verification.md | Append the before/after screenshot UI-verification section to `AGENTS.md` |
-| add-architecture-log.md | Set up `architecture_log.md` and add instructions to read/update it on technical decisions |
 </workflows_index>
 
 <success_criteria>
@@ -75,5 +73,5 @@ A project initialized with this skill:
 - [ ] Has a `@AGENTS.md` stub for every selected agent that doesn't read `AGENTS.md` natively (and none for those that do, e.g. Codex)
 - [ ] Has each requested MCP server configured for every selected agent (via native command where known, canonical config + note otherwise)
 - [ ] Stores no real secrets in committed config — placeholders + instructions where a key was withheld
-- [ ] Contains each selected instruction block (UI verification, architecture log) exactly once, even after re-running
+- [ ] Contains each selected instruction block (UI verification) exactly once, even after re-running
 </success_criteria>
