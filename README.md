@@ -4,6 +4,33 @@ A collection of CLI Agent skills and slash commands.
 
 ## Install
 
+### As a Claude Code plugin (recommended)
+
+Works in the Claude Code CLI and in Claude Code on the web (claude.ai). Inside a Claude Code session, run:
+
+```
+/plugin marketplace add ari-ayvazyan/AISkills
+/plugin install aiskills@aiskills
+/reload-plugins
+```
+
+All skills and commands are then available under the `aiskills` namespace, e.g. `/aiskills:micro-spec`, `/aiskills:verify-all`, `/aiskills:kiro.implement`. Skills with model-invocation descriptions are also picked up automatically based on context.
+
+The plugin has no pinned version, so every push to this repo counts as a new version — `/plugin update` (or auto-update) picks up the latest commit.
+
+Teams can auto-prompt installation for a project by adding this to the project's `.claude/settings.json`:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "aiskills": {
+      "source": { "source": "github", "repo": "ari-ayvazyan/AISkills" }
+    }
+  },
+  "enabledPlugins": { "aiskills@aiskills": true }
+}
+```
+
 ### Manual Install
 Copy the commands and skills folder into your cli agent dir. eg. .claude/
 

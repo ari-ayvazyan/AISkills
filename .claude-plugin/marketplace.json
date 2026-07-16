@@ -1,0 +1,15 @@
+{
+  "name": "aiskills",
+  "owner": {
+    "name": "Ari Ayvazyan"
+  },
+  "description": "Marketplace for the AISkills plugin",
+  "plugins": [
+    {
+      "name": "aiskills",
+      "source": "./",
+      "description": "All AISkills skills and commands in one plugin",
+      "category": "productivity"
+    }
+  ]
+}
