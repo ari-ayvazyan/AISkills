@@ -1,0 +1,10 @@
+{
+  "name": "aiskills",
+  "displayName": "AISkills",
+  "description": "A collection of agent skills and slash commands: architecture, design, naming, TDD, specs, and workflow tools.",
+  "author": {
+    "name": "Ari Ayvazyan"
+  },
+  "repository": "https://github.com/ari-ayvazyan/AISkills",
+  "license": "MIT"
+}

@@ -1,3 +1,7 @@
+# local skill-tooling artifacts (npx skills) — junction links into skills/
+.agents/
+skills-lock.json
+
 # all intellij files
 .idea/**
 
