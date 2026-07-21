@@ -1,15 +1,24 @@
 {
-  "name": "aiskills",
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "AISkills",
   "owner": {
     "name": "Ari Ayvazyan"
   },
-  "description": "Marketplace for the AISkills plugin",
+  "metadata": {
+    "description": "Curated Claude Code skills, managed with ecp-skillman"
+  },
   "plugins": [
     {
-      "name": "aiskills",
-      "source": "./",
-      "description": "All AISkills skills and commands in one plugin",
-      "category": "productivity"
+      "name": "ecp-chat-skills",
+      "source": "./plugins/ecp-chat-skills",
+      "description": "Web/Chat Skills",
+      "version": "0.1.1"
+    },
+    {
+      "name": "ecp-code-agent-skills",
+      "source": "./plugins/ecp-code-agent-skills",
+      "description": "Coding Agent Skills",
+      "version": "0.1.1"
     }
   ]
 }
