@@ -15,8 +15,8 @@ Add this marketplace in Claude Code:
 Then install a plugin:
 
 ```
-/plugin install ecp-chat-skills@AISkills
 /plugin install ecp-code-agent-skills@AISkills
+/plugin install ecp-chat-skills@AISkills
 ```
 
 ### Other agents
@@ -36,22 +36,6 @@ Each plugin lists its skills with a summary, source, and license.
 > | 🤖👤 | invoked either way: Claude can load it on its own, and you can call it with `/name` |
 > | 🤖 | self-invoked by the agent only, hidden from the `/` menu |
 > | 👤 | user-invoked only, Claude will not load it on its own |
-
-### ecp-chat-skills · v0.1.3
-
-Web/Chat Skills
-
-```
-/plugin install ecp-chat-skills@AISkills
-```
-
-| Skill | Use | What it does | Source | License |
-|---|---|---|---|---|
-| [caveman](plugins/ecp-chat-skills/skills/caveman) | 👤 | Ultra-compressed communication mode. Use when user says "caveman mode" or invokes /caveman. | - | - |
-| [formatted-summary](plugins/ecp-chat-skills/skills/formatted-summary) | 👤 | Summarizes texts in well digestible way | - | - |
-| [grilling](plugins/ecp-chat-skills/skills/grilling) | 👤 | Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/productivity/grilling) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
-| [handoff-micro-spec](plugins/ecp-chat-skills/skills/handoff-micro-spec) | 👤 | Turn a project idea into a minimal, on-point SPEC.md (caveman style — least text, max info). Use when the user runs /micro-spec or asks to spec out / document a project idea. | - | - |
-| [write-article](plugins/ecp-chat-skills/skills/write-article) | 👤 | Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/personal/edit-article) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
 
 ### ecp-code-agent-skills · v0.1.1
 
@@ -98,6 +82,22 @@ Coding Agent Skills
 | [color-architect](plugins/ecp-code-agent-skills/skills/web/planning/color-architect) | 👤 | Generates strategic color palettes. Use when creating or updating app color schemes, theming, or brand colors. | - | - |
 | [generate-app-names](plugins/ecp-code-agent-skills/skills/web/planning/generate-app-names) | 👤 | Generates strategic product and application names using linguistic engineering. Trigger when invoked with /generate-app-names | - | - |
 | [minimalist-web-design](plugins/ecp-code-agent-skills/skills/web/planning/minimalist-web-design) | 👤 | Designs and reviews minimalist, editorial-feeling web interfaces to a 2026 standard — distinctive layouts, extreme typographic hierarchy, restrained-but-bold color, strict performance budgets, and motion/SVG developer handoff. Use when designing a landing page or marketing site, auditing an existing design for generic "visual recycling," or preparing animated SVGs (e.g. GSAP DrawSVG) for developer handoff. | - | - |
+
+### ecp-chat-skills · v0.1.4
+
+Web/Chat Skills
+
+```
+/plugin install ecp-chat-skills@AISkills
+```
+
+| Skill | Use | What it does | Source | License |
+|---|---|---|---|---|
+| [caveman](plugins/ecp-chat-skills/skills/caveman) | 👤 | Ultra-compressed communication mode. Use when user says "caveman mode" or invokes /caveman. | - | - |
+| [formatted-summary](plugins/ecp-chat-skills/skills/formatted-summary) | 👤 | Summarizes texts in well digestible way | - | - |
+| [grilling](plugins/ecp-chat-skills/skills/grilling) | 👤 | Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/productivity/grilling) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
+| [handoff-micro-spec](plugins/ecp-chat-skills/skills/handoff-micro-spec) | 👤 | Turn a project idea into a minimal, on-point SPEC.md (caveman style — least text, max info). Use when the user runs /micro-spec or asks to spec out / document a project idea. | - | - |
+| [write-article](plugins/ecp-chat-skills/skills/write-article) | 👤 | Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/personal/edit-article) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
 
 ---
 

@@ -9,16 +9,16 @@
   },
   "plugins": [
     {
-      "name": "ecp-chat-skills",
-      "source": "./plugins/ecp-chat-skills",
-      "description": "Web/Chat Skills",
-      "version": "0.1.3"
-    },
-    {
       "name": "ecp-code-agent-skills",
       "source": "./plugins/ecp-code-agent-skills",
       "description": "Coding Agent Skills",
       "version": "0.1.1"
+    },
+    {
+      "name": "ecp-chat-skills",
+      "source": "./plugins/ecp-chat-skills",
+      "description": "Web/Chat Skills",
+      "version": "0.1.4"
     }
   ]
 }
