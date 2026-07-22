@@ -19,13 +19,36 @@ Then install a plugin:
 /plugin install ecp-code-agent-skills@AISkills
 ```
 
-### Other agents
+<details>
+<summary><strong>Other agents</strong> (Cursor, Codex, Copilot, Antigravity, OpenCode, and others)</summary>
 
-These skills also work outside Claude Code (Cursor, Codex, Copilot and others) via [Vercel Labs Skills](https://github.com/vercel-labs/skills):
+**Copy the skills once** with [Vercel Labs Skills](https://github.com/vercel-labs/skills):
 
 ```bash
 npx skills@latest add ari-ayvazyan/AISkills
 ```
+
+Or serve them live over MCP with [ecp-bridge](https://www.npmjs.com/package/ecp-bridge). Skills stay in this repo and auto-update whenever it changes, with no reinstall needed:
+
+```json
+{
+  "mcpServers": {
+    "ecp-bridge": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ecp-bridge",
+        "ari-ayvazyan/AISkills",
+        "ecp-chat-skills,ecp-code-agent-skills"
+      ]
+    }
+  }
+}
+```
+
+Add that to your MCP client config. The final argument is optional: omit it to serve every plugin in the marketplace, or pass a comma-separated subset as shown.
+
+</details>
 
 ## Plugins
 
