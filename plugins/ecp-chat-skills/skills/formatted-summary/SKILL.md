@@ -110,7 +110,7 @@ Emit grouped 2-column tables. One group per category present.
 **🔒 Access**
 | Key | Value |
 | --- | --- |
-| Login | `[email protected]` |
+| Login | `email@asd.com` |
 | Password | `Xk9$mQ2p` |
 | Portal | https://… |
 
