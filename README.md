@@ -37,7 +37,7 @@ Each skill below links to its source. Expand one to read what it does.
 > | 🤖 | self-invoked by the agent only, hidden from the `/` menu |
 > | 👤 | user-invoked only, Claude will not load it on its own |
 
-### ecp-chat-skills (v0.1.1)
+### ecp-chat-skills (v0.1.2)
 
 Web/Chat Skills
 
@@ -45,6 +45,12 @@ Web/Chat Skills
 <summary>👤 <a href="plugins/ecp-chat-skills/skills/caveman"><code>caveman</code></a></summary>
 
 Ultra-compressed communication mode. Use when user says "caveman mode" or invokes /caveman.
+
+</details>
+<details>
+<summary>👤 <a href="plugins/ecp-chat-skills/skills/formatted-summary"><code>formatted-summary</code></a></summary>
+
+Summarizes texts in well digestible way
 
 </details>
 <details>

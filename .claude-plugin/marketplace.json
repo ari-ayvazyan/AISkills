@@ -12,7 +12,7 @@
       "name": "ecp-chat-skills",
       "source": "./plugins/ecp-chat-skills",
       "description": "Web/Chat Skills",
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     {
       "name": "ecp-code-agent-skills",
