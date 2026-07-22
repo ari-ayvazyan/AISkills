@@ -18,7 +18,7 @@ Here is the restructured skill document, applying its own principles of semantic
 | **Application** | System prompts, meeting notes, complex documentation.
 
  |
-| **Constraint** | 🔴 Zero walls of text. Maximize cognitive and token efficiency.
+| **Constraint** | Zero walls of text. Maximize cognitive and token efficiency.
 
  |
 
@@ -100,6 +100,7 @@ Here is the restructured skill document, applying its own principles of semantic
 
 ## 4. Execution Protocol
 
+* [ ] **Ask:** When something is unclear, instead of assuming, ask the user before proceeding. (@Writer) 📅 *Pre-publish*
 * [ ] **Audit:** Delete all narrative transitions and pleasantries (@Writer) 📅 *Pre-publish*
 * [ ] **Isolate:** Move metadata to a top-level `Meta-Initiator` table (@Writer) 📅 *Pre-publish*
 * [ ] **Verify:** Ensure blank lines surround all markdown blocks (@Reviewer) 📅 *Pre-publish*

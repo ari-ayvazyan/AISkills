@@ -37,7 +37,7 @@ Each skill below links to its source. Expand one to read what it does.
 > | 🤖 | self-invoked by the agent only, hidden from the `/` menu |
 > | 👤 | user-invoked only, Claude will not load it on its own |
 
-### ecp-chat-skills (v0.1.2)
+### ecp-chat-skills (v0.1.3)
 
 Web/Chat Skills
 
