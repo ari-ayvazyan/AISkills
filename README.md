@@ -83,7 +83,7 @@ Coding Agent Skills
 | [generate-app-names](plugins/ecp-code-agent-skills/skills/web/planning/generate-app-names) | 👤 | Generates strategic product and application names using linguistic engineering. Trigger when invoked with /generate-app-names | - | - |
 | [minimalist-web-design](plugins/ecp-code-agent-skills/skills/web/planning/minimalist-web-design) | 👤 | Designs and reviews minimalist, editorial-feeling web interfaces to a 2026 standard — distinctive layouts, extreme typographic hierarchy, restrained-but-bold color, strict performance budgets, and motion/SVG developer handoff. Use when designing a landing page or marketing site, auditing an existing design for generic "visual recycling," or preparing animated SVGs (e.g. GSAP DrawSVG) for developer handoff. | - | - |
 
-### ecp-chat-skills · v0.1.4
+### ecp-chat-skills · v0.1.5
 
 Web/Chat Skills
 
