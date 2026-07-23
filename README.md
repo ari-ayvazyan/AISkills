@@ -95,32 +95,32 @@ Coding Agent Skills
 
 | Skill | Use | What it does | Source | License |
 |---|---|---|---|---|
-| [create-agent-skills](plugins/ecp-code-agent-skills/skills/meta/create-agent-skills) | 👤 | Expert guidance for Claude Code Skills. Use when working with SKILL.md files, authoring new skills, improving existing skills, or understanding skill structure. | - | - |
-| [init-agent-project](plugins/ecp-code-agent-skills/skills/meta/init-agent-project) | 👤 | Bootstraps a project for AI-agent usage in any agent. | - | - |
-| [mcp-builder](plugins/ecp-code-agent-skills/skills/meta/mcp-builder) | 👤 | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK). | - | - |
+| [create-agent-skills](plugins/ecp-code-agent-skills/skills/create-agent-skills) | 👤 | Expert guidance for Claude Code Skills. Use when working with SKILL.md files, authoring new skills, improving existing skills, or understanding skill structure. | - | - |
+| [init-agent-project](plugins/ecp-code-agent-skills/skills/init-agent-project) | 👤 | Bootstraps a project for AI-agent usage in any agent. | - | - |
+| [mcp-builder](plugins/ecp-code-agent-skills/skills/mcp-builder) | 👤 | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK). | - | - |
 
 **planning**
 
 | Skill | Use | What it does | Source | License |
 |---|---|---|---|---|
-| [codebase-design](plugins/ecp-code-agent-skills/skills/planning/codebase-design) | 🤖👤 | Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/codebase-design) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
-| [improve-codebase-architecture](plugins/ecp-code-agent-skills/skills/planning/improve-codebase-architecture) | 👤 | Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/improve-codebase-architecture) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
+| [codebase-design](plugins/ecp-code-agent-skills/skills/codebase-design) | 🤖👤 | Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/codebase-design) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
+| [improve-codebase-architecture](plugins/ecp-code-agent-skills/skills/improve-codebase-architecture) | 👤 | Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/improve-codebase-architecture) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
 
 **web**
 
 | Skill | Use | What it does | Source | License |
 |---|---|---|---|---|
-| [favicon-generator](plugins/ecp-code-agent-skills/skills/web/favicon-generator) | 👤 | Generate professional-quality favicons. Trigger when you need favicons, app icons, or browser tab icons. | - | - |
-| [og-image-creator](plugins/ecp-code-agent-skills/skills/web/og-image-creator) | 👤 | Smart OG image generation that studies your codebase, understands routes and brand identity, then creates contextually appropriate Open Graph images using Playwright and React components. | - | - |
-| [seo-optimizer](plugins/ecp-code-agent-skills/skills/web/seo-optimizer) | 👤 | Comprehensive SEO optimization for web applications. Use when asked to improve search rankings, add meta tags, create structured data, generate sitemaps, optimize for Core Web Vitals, or analyze SEO issues. Works with Next.js, Astro, React, and static HTML sites. | - | - |
+| [favicon-generator](plugins/ecp-code-agent-skills/skills/favicon-generator) | 👤 | Generate professional-quality favicons. Trigger when you need favicons, app icons, or browser tab icons. | - | - |
+| [og-image-creator](plugins/ecp-code-agent-skills/skills/og-image-creator) | 👤 | Smart OG image generation that studies your codebase, understands routes and brand identity, then creates contextually appropriate Open Graph images using Playwright and React components. | - | - |
+| [seo-optimizer](plugins/ecp-code-agent-skills/skills/seo-optimizer) | 👤 | Comprehensive SEO optimization for web applications. Use when asked to improve search rankings, add meta tags, create structured data, generate sitemaps, optimize for Core Web Vitals, or analyze SEO issues. Works with Next.js, Astro, React, and static HTML sites. | - | - |
 
 **web/planning**
 
 | Skill | Use | What it does | Source | License |
 |---|---|---|---|---|
-| [color-architect](plugins/ecp-code-agent-skills/skills/web/planning/color-architect) | 👤 | Generates strategic color palettes. Use when creating or updating app color schemes, theming, or brand colors. | - | - |
-| [generate-app-names](plugins/ecp-code-agent-skills/skills/web/planning/generate-app-names) | 👤 | Generates strategic product and application names using linguistic engineering. Trigger when invoked with /generate-app-names | - | - |
-| [minimalist-web-design](plugins/ecp-code-agent-skills/skills/web/planning/minimalist-web-design) | 👤 | Designs and reviews minimalist, editorial-feeling web interfaces to a 2026 standard — distinctive layouts, extreme typographic hierarchy, restrained-but-bold color, strict performance budgets, and motion/SVG developer handoff. Use when designing a landing page or marketing site, auditing an existing design for generic "visual recycling," or preparing animated SVGs (e.g. GSAP DrawSVG) for developer handoff. | - | - |
+| [color-architect](plugins/ecp-code-agent-skills/skills/color-architect) | 👤 | Generates strategic color palettes. Use when creating or updating app color schemes, theming, or brand colors. | - | - |
+| [generate-app-names](plugins/ecp-code-agent-skills/skills/generate-app-names) | 👤 | Generates strategic product and application names using linguistic engineering. Trigger when invoked with /generate-app-names | - | - |
+| [minimalist-web-design](plugins/ecp-code-agent-skills/skills/minimalist-web-design) | 👤 | Designs and reviews minimalist, editorial-feeling web interfaces to a 2026 standard — distinctive layouts, extreme typographic hierarchy, restrained-but-bold color, strict performance budgets, and motion/SVG developer handoff. Use when designing a landing page or marketing site, auditing an existing design for generic "visual recycling," or preparing animated SVGs (e.g. GSAP DrawSVG) for developer handoff. | - | - |
 
 ---
 
