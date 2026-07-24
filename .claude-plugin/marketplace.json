@@ -12,13 +12,19 @@
       "name": "ecp-chat-skills",
       "source": "./plugins/ecp-chat-skills",
       "description": "Web/Chat Skills",
-      "version": "0.1.6"
+      "version": "0.1.7"
     },
     {
       "name": "ecp-code-agent-skills",
       "source": "./plugins/ecp-code-agent-skills",
       "description": "Coding Agent Skills",
-      "version": "0.1.2"
+      "version": "0.1.3"
+    },
+    {
+      "name": "ecp-frontend",
+      "source": "./plugins/ecp-frontend",
+      "description": "Skills: brandkit, color-architect, design-taste-frontend, favicon-generator, full-output-enforcement, gpt-taste, high-end-visual-design, image-to-code, imagegen-frontend-mobile, imagegen-frontend-web, industrial-brutalist-ui, minimalist-ui, minimalist-web-design, og-image-creator, redesign-existing-projects, seo-optimizer, stitch-design-taste",
+      "version": "0.1.1"
     }
   ]
 }
