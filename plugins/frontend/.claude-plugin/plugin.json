@@ -1,7 +1,7 @@
 {
-  "name": "ecp-frontend",
+  "name": "frontend",
   "description": "Skills: brandkit, color-architect, design-taste-frontend, favicon-generator, full-output-enforcement, gpt-taste, high-end-visual-design, image-to-code, imagegen-frontend-mobile, imagegen-frontend-web, industrial-brutalist-ui, minimalist-ui, minimalist-web-design, og-image-creator, redesign-existing-projects, seo-optimizer, stitch-design-taste",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Ari Ayvazyan"
   }

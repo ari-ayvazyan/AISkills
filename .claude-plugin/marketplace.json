@@ -9,22 +9,22 @@
   },
   "plugins": [
     {
-      "name": "ecp-chat-skills",
-      "source": "./plugins/ecp-chat-skills",
+      "name": "chat-skills",
+      "source": "./plugins/chat-skills",
       "description": "Web/Chat Skills",
-      "version": "0.1.7"
+      "version": "0.1.8"
     },
     {
-      "name": "ecp-code-agent-skills",
-      "source": "./plugins/ecp-code-agent-skills",
+      "name": "code-agent-skills",
+      "source": "./plugins/code-agent-skills",
       "description": "Coding Agent Skills",
-      "version": "0.1.3"
+      "version": "0.1.4"
     },
     {
-      "name": "ecp-frontend",
-      "source": "./plugins/ecp-frontend",
+      "name": "frontend",
+      "source": "./plugins/frontend",
       "description": "Skills: brandkit, color-architect, design-taste-frontend, favicon-generator, full-output-enforcement, gpt-taste, high-end-visual-design, image-to-code, imagegen-frontend-mobile, imagegen-frontend-web, industrial-brutalist-ui, minimalist-ui, minimalist-web-design, og-image-creator, redesign-existing-projects, seo-optimizer, stitch-design-taste",
-      "version": "0.1.1"
+      "version": "0.1.2"
     }
   ]
 }
