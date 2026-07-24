@@ -18,7 +18,7 @@
       "name": "ecp-code-agent-skills",
       "source": "./plugins/ecp-code-agent-skills",
       "description": "Coding Agent Skills",
-      "version": "0.1.1"
+      "version": "0.1.2"
     }
   ]
 }
