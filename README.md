@@ -23,13 +23,7 @@ Then install a plugin:
 <details>
 <summary><strong>Other agents</strong> (Cursor, Codex, Copilot, Antigravity, OpenCode, and others)</summary>
 
-**Copy the skills once** with [Vercel Labs Skills](https://github.com/vercel-labs/skills):
-
-```bash
-npx skills@latest add ari-ayvazyan/AISkills
-```
-
-Or serve them live over MCP with [ecp-bridge](https://www.npmjs.com/package/ecp-bridge). Skills stay in this repo and auto-update whenever it changes, with no reinstall needed:
+Serve the skills live over MCP with [ecp-bridge](https://www.npmjs.com/package/ecp-bridge). Skills stay in this repo and auto-update whenever it changes, with no reinstall needed:
 
 ```json
 {
@@ -48,6 +42,17 @@ Or serve them live over MCP with [ecp-bridge](https://www.npmjs.com/package/ecp-
 ```
 
 Add that to your MCP client config. The final argument is optional: omit it to serve every plugin in the marketplace, or pass a comma-separated subset as shown.
+
+</details>
+
+<details>
+<summary><strong>One-time copy</strong> (no auto-updates)</summary>
+
+Copy the skills once with [Vercel Labs Skills](https://github.com/vercel-labs/skills). This is a snapshot: it will not update when this marketplace changes.
+
+```bash
+npx skills@latest add ari-ayvazyan/AISkills
+```
 
 </details>
 
