@@ -12,7 +12,7 @@
       "name": "chat-skills",
       "source": "./plugins/chat-skills",
       "description": "Web/Chat Skills",
-      "version": "0.1.8"
+      "version": "0.1.9"
     },
     {
       "name": "code-agent-skills",
