@@ -15,9 +15,9 @@ Add this marketplace in Claude Code:
 Then install a plugin:
 
 ```
+/plugin install frontend@AISkills
 /plugin install chat-skills@AISkills
 /plugin install code-agent-skills@AISkills
-/plugin install frontend@AISkills
 ```
 
 <details>
@@ -34,7 +34,7 @@ Serve the skills live over MCP with [ecp-bridge](https://www.npmjs.com/package/e
         "-y",
         "ecp-bridge",
         "ari-ayvazyan/AISkills",
-        "chat-skills,code-agent-skills,frontend"
+        "frontend,chat-skills,code-agent-skills"
       ]
     }
   }
@@ -65,54 +65,6 @@ Each plugin lists its skills with a summary, source, and license.
 > | 🤖👤 | invoked either way: Claude can load it on its own, and you can call it with `/name` |
 > | 🤖 | self-invoked by the agent only, hidden from the `/` menu |
 > | 👤 | user-invoked only, Claude will not load it on its own |
-
-### chat-skills · v0.1.9
-
-Web/Chat Skills
-
-```
-/plugin install chat-skills@AISkills
-```
-
-| Skill | Use | What it does | Source | License |
-|---|---|---|---|---|
-| [caveman](plugins/chat-skills/skills/caveman) | 👤 | Ultra-compressed communication mode. Use when user says "caveman mode" or invokes /caveman. | - | - |
-| [formatted-summary](plugins/chat-skills/skills/formatted-summary) | 👤 | Summarizes texts in well digestible way | - | - |
-| [generate-app-names](plugins/chat-skills/skills/generate-app-names) | 👤 | Generates strategic product and application names using linguistic engineering. Trigger when invoked with /generate-app-names | - | - |
-| [grilling](plugins/chat-skills/skills/grilling) | 👤 | Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/productivity/grilling) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
-| [handoff-micro-spec](plugins/chat-skills/skills/handoff-micro-spec) | 👤 | Turn a project idea into a minimal, on-point SPEC.md (caveman style — least text, max info). Use when the user runs /micro-spec or asks to spec out / document a project idea. | - | - |
-| [humanizer](plugins/chat-skills/skills/humanizer) | 🤖👤 | Remove signs of AI-generated writing from text. Use when editing or reviewing text to make it sound more natural and human-written. Based on Wikipedia's comprehensive "Signs of AI writing" guide. Detects and fixes patterns including: inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary words, passive voice, negative parallelisms, and filler phrases. | [Source](https://github.com/blader/humanizer/tree/523374dee72d67c7b2b5f858ea0094ffda49c3ac) | [License](https://github.com/blader/humanizer/blob/523374dee72d67c7b2b5f858ea0094ffda49c3ac/LICENSE) |
-| [write-article](plugins/chat-skills/skills/write-article) | 👤 | Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/personal/edit-article) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
-
-### code-agent-skills · v0.1.4
-
-Coding Agent Skills
-
-```
-/plugin install code-agent-skills@AISkills
-```
-
-| Skill | Use | What it does | Source | License |
-|---|---|---|---|---|
-| [architecture-decisions](plugins/code-agent-skills/skills/architecture-decisions) | 🤖👤 | ALWAYS Execute this skills before deciding any technical/architectural matter, to avoid reintroducing already-solved issues. | - | - |
-| [diagnosing-bugs](plugins/code-agent-skills/skills/diagnosing-bugs) | 🤖👤 | Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/diagnosing-bugs) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
-| [tdd](plugins/code-agent-skills/skills/tdd) | 🤖👤 | Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/tdd) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
-| [teach](plugins/code-agent-skills/skills/teach) | 👤 | Teach the user a new skill or concept, within this workspace. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/productivity/teach) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
-
-**meta**
-
-| Skill | Use | What it does | Source | License |
-|---|---|---|---|---|
-| [create-agent-skills](plugins/code-agent-skills/skills/create-agent-skills) | 👤 | Expert guidance for Claude Code Skills. Use when working with SKILL.md files, authoring new skills, improving existing skills, or understanding skill structure. | - | - |
-| [init-agent-project](plugins/code-agent-skills/skills/init-agent-project) | 👤 | Bootstraps a project for AI-agent usage in any agent. | - | - |
-| [mcp-builder](plugins/code-agent-skills/skills/mcp-builder) | 👤 | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK). | - | - |
-
-**planning**
-
-| Skill | Use | What it does | Source | License |
-|---|---|---|---|---|
-| [codebase-design](plugins/code-agent-skills/skills/codebase-design) | 🤖👤 | Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/codebase-design) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
-| [improve-codebase-architecture](plugins/code-agent-skills/skills/improve-codebase-architecture) | 👤 | Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/improve-codebase-architecture) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
 
 ### frontend · v0.1.2
 
@@ -153,6 +105,54 @@ _No description._
 |---|---|---|---|---|
 | [color-architect](plugins/frontend/skills/color-architect) | 👤 | Generates strategic color palettes. Use when creating or updating app color schemes, theming, or brand colors. | - | - |
 | [minimalist-web-design](plugins/frontend/skills/minimalist-web-design) | 👤 | Designs and reviews minimalist, editorial-feeling web interfaces to a 2026 standard — distinctive layouts, extreme typographic hierarchy, restrained-but-bold color, strict performance budgets, and motion/SVG developer handoff. Use when designing a landing page or marketing site, auditing an existing design for generic "visual recycling," or preparing animated SVGs (e.g. GSAP DrawSVG) for developer handoff. | - | - |
+
+### chat-skills · v0.1.10
+
+Web/Chat Skills
+
+```
+/plugin install chat-skills@AISkills
+```
+
+| Skill | Use | What it does | Source | License |
+|---|---|---|---|---|
+| [caveman](plugins/chat-skills/skills/caveman) | 👤 | Ultra-compressed communication mode. Use when user says "caveman mode" or invokes /caveman. | - | - |
+| [edit-article](plugins/chat-skills/skills/edit-article) | 👤 | Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/personal/edit-article) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
+| [formatted-summary](plugins/chat-skills/skills/formatted-summary) | 👤 | Summarizes texts in well digestible way | - | - |
+| [generate-app-names](plugins/chat-skills/skills/generate-app-names) | 👤 | Generates strategic product and application names using linguistic engineering. Trigger when invoked with /generate-app-names | - | - |
+| [grilling](plugins/chat-skills/skills/grilling) | 👤 | Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/productivity/grilling) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
+| [humanizer](plugins/chat-skills/skills/humanizer) | 🤖👤 | Remove signs of AI-generated writing from text. Use when editing or reviewing text to make it sound more natural and human-written. Based on Wikipedia's comprehensive "Signs of AI writing" guide. Detects and fixes patterns including: inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary words, passive voice, negative parallelisms, and filler phrases. | [Source](https://github.com/blader/humanizer/tree/523374dee72d67c7b2b5f858ea0094ffda49c3ac) | [License](https://github.com/blader/humanizer/blob/523374dee72d67c7b2b5f858ea0094ffda49c3ac/LICENSE) |
+| [micro-spec](plugins/chat-skills/skills/micro-spec) | 👤 | Turn a project idea into a minimal, on-point SPEC.md (caveman style — least text, max info). Use when the user runs /micro-spec or asks to spec out / document a project idea. | - | - |
+
+### code-agent-skills · v0.1.4
+
+Coding Agent Skills
+
+```
+/plugin install code-agent-skills@AISkills
+```
+
+| Skill | Use | What it does | Source | License |
+|---|---|---|---|---|
+| [architecture-decisions](plugins/code-agent-skills/skills/architecture-decisions) | 🤖👤 | ALWAYS Execute this skills before deciding any technical/architectural matter, to avoid reintroducing already-solved issues. | - | - |
+| [diagnosing-bugs](plugins/code-agent-skills/skills/diagnosing-bugs) | 🤖👤 | Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/diagnosing-bugs) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
+| [tdd](plugins/code-agent-skills/skills/tdd) | 🤖👤 | Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/tdd) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
+| [teach](plugins/code-agent-skills/skills/teach) | 👤 | Teach the user a new skill or concept, within this workspace. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/productivity/teach) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
+
+**meta**
+
+| Skill | Use | What it does | Source | License |
+|---|---|---|---|---|
+| [create-agent-skills](plugins/code-agent-skills/skills/create-agent-skills) | 👤 | Expert guidance for Claude Code Skills. Use when working with SKILL.md files, authoring new skills, improving existing skills, or understanding skill structure. | - | - |
+| [init-agent-project](plugins/code-agent-skills/skills/init-agent-project) | 👤 | Bootstraps a project for AI-agent usage in any agent. | - | - |
+| [mcp-builder](plugins/code-agent-skills/skills/mcp-builder) | 👤 | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK). | - | - |
+
+**planning**
+
+| Skill | Use | What it does | Source | License |
+|---|---|---|---|---|
+| [codebase-design](plugins/code-agent-skills/skills/codebase-design) | 🤖👤 | Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/codebase-design) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
+| [improve-codebase-architecture](plugins/code-agent-skills/skills/improve-codebase-architecture) | 👤 | Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/improve-codebase-architecture) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
 
 ---
 
