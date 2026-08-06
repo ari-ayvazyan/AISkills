@@ -4,21 +4,35 @@ Claude Code plugin marketplace, managed with [ecp-skillman](https://ecp-skillman
 
 ## Install
 
-### Claude Code
+### Claude Code CLI
 
-Add this marketplace in Claude Code:
+Add the marketplace, then install any plugin by name:
 
 ```
 /plugin marketplace add ari-ayvazyan/AISkills
 ```
-
-Then install a plugin:
 
 ```
 /plugin install frontend@AISkills
 /plugin install chat-skills@AISkills
 /plugin install code-agent-skills@AISkills
 ```
+
+### Claude Code web & app
+
+No commands. Add the repo once in Settings, then pick plugins from the directory.
+
+1. Open **Settings · Plugins** and choose **Add marketplace**.
+2. Paste the repo as the URL:
+
+   ```
+   ari-ayvazyan/AISkills
+   ```
+
+3. Turn on **Sync automatically**, then **Sync**.
+4. In **Directory · Plugins**, open **Personal** and add the plugins you want.
+
+Auto-sync keeps it current on every publish.
 
 <details>
 <summary><strong>Other agents</strong> (Cursor, Codex, Copilot, Antigravity, OpenCode, and others)</summary>
@@ -106,7 +120,7 @@ _No description._
 | [color-architect](plugins/frontend/skills/color-architect) | 👤 | Generates strategic color palettes. Use when creating or updating app color schemes, theming, or brand colors. | - | - |
 | [minimalist-web-design](plugins/frontend/skills/minimalist-web-design) | 👤 | Designs and reviews minimalist, editorial-feeling web interfaces to a 2026 standard — distinctive layouts, extreme typographic hierarchy, restrained-but-bold color, strict performance budgets, and motion/SVG developer handoff. Use when designing a landing page or marketing site, auditing an existing design for generic "visual recycling," or preparing animated SVGs (e.g. GSAP DrawSVG) for developer handoff. | - | - |
 
-### chat-skills · v0.1.10
+### chat-skills · v0.1.11
 
 Web/Chat Skills
 
@@ -120,11 +134,11 @@ Web/Chat Skills
 | [edit-article](plugins/chat-skills/skills/edit-article) | 👤 | Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/personal/edit-article) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
 | [formatted-summary](plugins/chat-skills/skills/formatted-summary) | 👤 | Summarizes texts in well digestible way | - | - |
 | [generate-app-names](plugins/chat-skills/skills/generate-app-names) | 👤 | Generates strategic product and application names using linguistic engineering. Trigger when invoked with /generate-app-names | - | - |
-| [grilling](plugins/chat-skills/skills/grilling) | 👤 | Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/productivity/grilling) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
+| [grilling](plugins/chat-skills/skills/grilling) | 🤖👤 | Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases. | [Source](https://github.com/mattpocock/skills/tree/8b36d4fb2635b3c21998dcd8144439c9e5ba7302/skills/productivity/grilling) | [License](https://github.com/mattpocock/skills/blob/8b36d4fb2635b3c21998dcd8144439c9e5ba7302/LICENSE) |
 | [humanizer](plugins/chat-skills/skills/humanizer) | 🤖👤 | Remove signs of AI-generated writing from text. Use when editing or reviewing text to make it sound more natural and human-written. Based on Wikipedia's comprehensive "Signs of AI writing" guide. Detects and fixes patterns including: inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary words, passive voice, negative parallelisms, and filler phrases. | [Source](https://github.com/blader/humanizer/tree/523374dee72d67c7b2b5f858ea0094ffda49c3ac) | [License](https://github.com/blader/humanizer/blob/523374dee72d67c7b2b5f858ea0094ffda49c3ac/LICENSE) |
 | [micro-spec](plugins/chat-skills/skills/micro-spec) | 👤 | Turn a project idea into a minimal, on-point SPEC.md (caveman style — least text, max info). Use when the user runs /micro-spec or asks to spec out / document a project idea. | - | - |
 
-### code-agent-skills · v0.1.4
+### code-agent-skills · v0.1.5
 
 Coding Agent Skills
 
@@ -136,7 +150,7 @@ Coding Agent Skills
 |---|---|---|---|---|
 | [architecture-decisions](plugins/code-agent-skills/skills/architecture-decisions) | 🤖👤 | ALWAYS Execute this skills before deciding any technical/architectural matter, to avoid reintroducing already-solved issues. | - | - |
 | [diagnosing-bugs](plugins/code-agent-skills/skills/diagnosing-bugs) | 🤖👤 | Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/diagnosing-bugs) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
-| [tdd](plugins/code-agent-skills/skills/tdd) | 🤖👤 | Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/tdd) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
+| [tdd](plugins/code-agent-skills/skills/tdd) | 🤖👤 | Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests. | [Source](https://github.com/mattpocock/skills/tree/8b36d4fb2635b3c21998dcd8144439c9e5ba7302/skills/engineering/tdd) | [License](https://github.com/mattpocock/skills/blob/8b36d4fb2635b3c21998dcd8144439c9e5ba7302/LICENSE) |
 | [teach](plugins/code-agent-skills/skills/teach) | 👤 | Teach the user a new skill or concept, within this workspace. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/productivity/teach) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
 
 **meta**

@@ -18,13 +18,13 @@
       "name": "chat-skills",
       "source": "./plugins/chat-skills",
       "description": "Web/Chat Skills",
-      "version": "0.1.10"
+      "version": "0.1.11"
     },
     {
       "name": "code-agent-skills",
       "source": "./plugins/code-agent-skills",
       "description": "Coding Agent Skills",
-      "version": "0.1.4"
+      "version": "0.1.5"
     }
   ]
 }
