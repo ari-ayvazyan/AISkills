@@ -1,6 +1,6 @@
 ---
 name: clear-language
-description: This skill describes the style of your answers. Always use this skill.
+description: Call this skill to respond in a user readable way
 ---
 
 # clear-language

@@ -120,7 +120,7 @@ _No description._
 | [color-architect](plugins/frontend/skills/color-architect) | 👤 | Generates strategic color palettes. Use when creating or updating app color schemes, theming, or brand colors. | - | - |
 | [minimalist-web-design](plugins/frontend/skills/minimalist-web-design) | 👤 | Designs and reviews minimalist, editorial-feeling web interfaces to a 2026 standard — distinctive layouts, extreme typographic hierarchy, restrained-but-bold color, strict performance budgets, and motion/SVG developer handoff. Use when designing a landing page or marketing site, auditing an existing design for generic "visual recycling," or preparing animated SVGs (e.g. GSAP DrawSVG) for developer handoff. | - | - |
 
-### chat-skills · v0.1.12
+### chat-skills · v0.1.13
 
 Web/Chat Skills
 
@@ -131,7 +131,7 @@ Web/Chat Skills
 | Skill | Use | What it does | Source | License |
 |---|---|---|---|---|
 | [caveman](plugins/chat-skills/skills/caveman) | 👤 | Ultra-compressed communication mode. Use when user says "caveman mode" or invokes /caveman. | - | - |
-| [clear-language](plugins/chat-skills/skills/clear-language) | 🤖👤 | This skill describes the style of your answers. Always use this skill. | - | - |
+| [clear-language](plugins/chat-skills/skills/clear-language) | 🤖👤 | Call this skill to respond in a user readable way | - | - |
 | [edit-article](plugins/chat-skills/skills/edit-article) | 👤 | Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft. | [Source](https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/personal/edit-article) | [License](https://github.com/mattpocock/skills/blob/ed37663cc5fbef691ddfecd080dff42f7e7e350d/LICENSE) |
 | [formatted-summary](plugins/chat-skills/skills/formatted-summary) | 👤 | Summarizes texts in well digestible way | - | - |
 | [generate-app-names](plugins/chat-skills/skills/generate-app-names) | 👤 | Generates strategic product and application names using linguistic engineering. Trigger when invoked with /generate-app-names | - | - |
