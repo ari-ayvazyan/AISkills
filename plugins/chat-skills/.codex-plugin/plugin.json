@@ -1,8 +1,9 @@
 {
   "name": "chat-skills",
-  "description": "Web/Chat Skills",
   "version": "0.1.15",
+  "description": "Web/Chat Skills",
   "author": {
     "name": "Ari Ayvazyan"
-  }
+  },
+  "skills": "./skills/"
 }

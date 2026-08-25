@@ -1,8 +1,9 @@
 {
   "name": "code-agent-skills",
-  "description": "Coding Agent Skills",
   "version": "0.1.8",
+  "description": "Coding Agent Skills",
   "author": {
     "name": "Ari Ayvazyan"
-  }
+  },
+  "skills": "./skills/"
 }
