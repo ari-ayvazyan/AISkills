@@ -1,7 +1,7 @@
 {
   "name": "frontend",
-  "version": "0.1.4",
-  "description": "Skills: brandkit, color-architect, design-taste-frontend, favicon-generator, full-output-enforcement, gpt-taste, high-end-visual-design, image-to-code, imagegen-frontend-mobile, imagegen-frontend-web, industrial-brutalist-ui, minimalist-ui, minimalist-web-design, og-image-creator, redesign-existing-projects, seo-optimizer, stitch-design-taste",
+  "version": "0.1.5",
+  "description": "Skills: color-architect, favicon-generator, minimalist-web-design, og-image-creator, seo-optimizer",
   "author": {
     "name": "Ari Ayvazyan"
   },
