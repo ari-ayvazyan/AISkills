@@ -9,6 +9,18 @@
   },
   "plugins": [
     {
+      "name": "code-agent-skills",
+      "source": "./plugins/code-agent-skills",
+      "description": "Coding Agent Skills",
+      "version": "0.1.10"
+    },
+    {
+      "name": "experimental",
+      "source": "./plugins/experimental",
+      "description": "Skills: brandkit, design-taste-frontend, full-output-enforcement, gpt-taste, high-end-visual-design, image-to-code, imagegen-frontend-mobile, imagegen-frontend-web, industrial-brutalist-ui, minimalist-ui, redesign-existing-projects, stitch-design-taste, test-freshness",
+      "version": "0.1.2"
+    },
+    {
       "name": "frontend",
       "source": "./plugins/frontend",
       "description": "Skills: color-architect, favicon-generator, minimalist-web-design, og-image-creator, seo-optimizer",
@@ -19,18 +31,6 @@
       "source": "./plugins/chat-skills",
       "description": "Web/Chat Skills",
       "version": "0.1.15"
-    },
-    {
-      "name": "code-agent-skills",
-      "source": "./plugins/code-agent-skills",
-      "description": "Coding Agent Skills",
-      "version": "0.1.9"
-    },
-    {
-      "name": "experimental",
-      "source": "./plugins/experimental",
-      "description": "Skills: brandkit, design-taste-frontend, full-output-enforcement, gpt-taste, high-end-visual-design, image-to-code, imagegen-frontend-mobile, imagegen-frontend-web, industrial-brutalist-ui, minimalist-ui, redesign-existing-projects, stitch-design-taste, test-freshness",
-      "version": "0.1.2"
     }
   ]
 }
