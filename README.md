@@ -81,7 +81,7 @@ Each plugin lists its skills with a summary, source, and license.
 > | 🤖 | self-invoked by the agent only, hidden from the `/` menu |
 > | 👤 | user-invoked only, Claude will not load it on its own |
 
-### code-agent-skills · v0.1.10
+### code-agent-skills · v0.1.11
 
 Coding Agent Skills
 
@@ -95,6 +95,7 @@ Coding Agent Skills
 | [architecture-decisions](plugins/code-agent-skills/skills/architecture-decisions) | 🤖👤 | ALWAYS Execute this skills before deciding any technical/architectural matter, to avoid reintroducing already-solved issues. | - | - |
 | [diagnosing-bugs](plugins/code-agent-skills/skills/diagnosing-bugs) | 🤖👤 | Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/diagnosing-bugs) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
 | [gauntlet-loop](plugins/code-agent-skills/skills/gauntlet-loop) | 👤 | Create a .md file for a goal driven gauntlet loop | - | - |
+| [svg-critic](plugins/code-agent-skills/skills/svg-critic) | 🤖👤 | Advanced instructions, protocols, and evaluation rubrics for SVG critique agents auditing vector graphic recreations against reference images in a Gauntlet Loop. | - | - |
 | [tdd](plugins/code-agent-skills/skills/tdd) | 🤖👤 | Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/tdd) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
 | [teach](plugins/code-agent-skills/skills/teach) | 👤 | Teach the user a new skill or concept, within this workspace. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/productivity/teach) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
 
