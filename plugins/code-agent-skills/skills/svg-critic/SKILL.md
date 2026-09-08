@@ -17,6 +17,7 @@ This skill defines instructions, cognitive frameworks, and prompting paradigms f
 3. **Adversarial Fraud Detection:** Assume the recreation is an impostor. Search for telltale digital shortcuts, synthetic smudges, and hallucinated features that betray the copy.
 4. **Realistic Scoring Anchoring:** If a render looks cheap, muddy, synthetic, or visibly diverges from the reference in crispness and fidelity, the score belongs in the **20%–35%** range. Do not award scores above 50% until true architectural crispness and material parity are achieved.
 5. **Brevity & High-Level Summaries:** Prioritize concise architectural diagnostics over verbose step-by-step narration.
+6. **Zoom in:** Zoom in on the svg and the image to see details more clearly.
 
 ---
 

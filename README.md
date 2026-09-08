@@ -81,7 +81,7 @@ Each plugin lists its skills with a summary, source, and license.
 > | 🤖 | self-invoked by the agent only, hidden from the `/` menu |
 > | 👤 | user-invoked only, Claude will not load it on its own |
 
-### code-agent-skills · v0.1.11
+### code-agent-skills · v0.1.12
 
 Coding Agent Skills
 
