@@ -115,7 +115,7 @@ Coding Agent Skills
 | [codebase-design](plugins/code-agent-skills/skills/codebase-design) | 🤖👤 | Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/codebase-design) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
 | [improve-codebase-architecture](plugins/code-agent-skills/skills/improve-codebase-architecture) | 👤 | Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/improve-codebase-architecture) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
 
-### experimental · v0.1.2
+### experimental · v0.1.3
 
 _No description._
 
@@ -125,6 +125,7 @@ _No description._
 
 | Skill | Use | What it does | Source | License |
 |---|---|---|---|---|
+| [knowledge-base](plugins/experimental/skills/knowledge-base) | 🤖👤 | Persistent file-based knowledge base of compact learnings, shared across agents. Use before non-trivial work or decisions in a field it may cover, when debugging something recurring, or when asked what is known about a topic. Also use when asked to save a learning or to ingest a source such as a link, document or email; never write to it otherwise. | - | - |
 | [test-freshness](plugins/experimental/skills/test-freshness) | 🤖👤 | Audit tests that pass despite broken behavior, stale mocks, or changed interfaces in any repository. Use when reviewing test validity or proposing SHA-256 freshness guards; not for routine test execution or CI configuration. | - | - |
 
 **taste**
