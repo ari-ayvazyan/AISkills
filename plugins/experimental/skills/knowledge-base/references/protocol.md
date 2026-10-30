@@ -31,6 +31,12 @@ Topic file `<slug>.md`:
 
     See: [[other-slug]]
 
+Reference, a bullet in the most fitting topic file; comment exempt from the word limit:
+
+    - ref <website|image|video|audio|text> <URL or .assets/name.ext> -> what is interesting
+
+Local file or pasted text -> copy to `.assets/` in knowledge root, lowercase-with-hyphens name, no spaces, pasted text as `.txt`. Over 50 MB -> ask first. Website, online media -> URL only, no download.
+
 Index `_index.md`, one line per child:
 
     - [[slug]] - what this topic covers

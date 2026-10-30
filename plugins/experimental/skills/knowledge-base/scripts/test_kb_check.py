@@ -103,6 +103,15 @@ class KbCheck(unittest.TestCase):
         self.write("_index.md", "- [[one]] - x\n- [[Bad_Name]] - b\n- [sub/](sub/_index.md) - y\n")
         self.errors("invalid slug")
 
+    def test_reference_file_present_and_assets_not_indexed(self):
+        self.write(".assets/grid.png", "x")
+        self.write("one.md", TOPIC + "- ref image .assets/grid.png -> tight grid\n- ref website https://a.at -> nav\n")
+        self.assertEqual(check(self.root, TODAY)[0], [])
+
+    def test_missing_reference_file(self):
+        self.write("one.md", TOPIC + "- ref audio .assets/gone.mp3 -> intro\n")
+        self.errors("missing reference file .assets/gone.mp3")
+
     def test_crlf_files(self):
         self.write("one.md", TOPIC.replace("\n", "\r\n"))
         self.assertEqual(check(self.root, TODAY)[0], [])

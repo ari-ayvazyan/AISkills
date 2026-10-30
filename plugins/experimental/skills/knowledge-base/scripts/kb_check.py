@@ -19,6 +19,7 @@ FOLDER_ENTRY = re.compile(r"^- \[([^\]]+)/\]\(([^)]+)\)")
 # only slug-shaped text is a link; bullets may quote syntax such as bash [[ $a ]]
 LINK = re.compile(r"\[\[([A-Za-z0-9_-]+)\]\]")
 UPDATED = re.compile(r"^updated:\s*(\S+)\s*$", re.M)
+ASSET = re.compile(r"^- ref \S+ (\.assets/\S+)", re.M)
 
 
 def split_frontmatter(text):
@@ -64,7 +65,7 @@ def check_index(folder, errors):
         errors.append(f"{index}: lists missing folder {name}/")
 
 
-def check_topic(path, slugs, today, stale_days, errors, stale):
+def check_topic(path, root, slugs, today, stale_days, errors, stale):
     if not SLUG.match(path.stem):
         errors.append(f"{path}: invalid slug")
     front, body = split_frontmatter(path.read_text(encoding="utf-8"))
@@ -87,6 +88,9 @@ def check_topic(path, slugs, today, stale_days, errors, stale):
     for link in LINK.findall(body):
         if link not in slugs:
             errors.append(f"{path}: broken link [[{link}]]")
+    for asset in ASSET.findall(body):
+        if not (root / asset).exists():
+            errors.append(f"{path}: missing reference file {asset}")
 
 
 def check(root, today, stale_days=None):
@@ -101,7 +105,7 @@ def check(root, today, stale_days=None):
     for folder in [root, *[p for p in root.rglob("*") if p.is_dir() and not any(s.startswith(".") for s in p.relative_to(root).parts)]]:
         check_index(folder, errors)
     for p in topics:
-        check_topic(p, seen, today, stale_days, errors, stale)
+        check_topic(p, root, seen, today, stale_days, errors, stale)
     return errors, stale, len(topics)
 
 

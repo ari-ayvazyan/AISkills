@@ -23,8 +23,11 @@ A skill only loads when the agent decides it fits, and agents often do not think
 ## Ingesting sources
 Ask the agent, for example: `Ingest this into the knowledge base: <link, file path or pasted text>`. It can only open what it has access to: links need a web tool, emails need a mail connector or pasted text.
 
+## Ingesting references
+Ask the agent, for example: `Ingest as reference: <link or file path> - <what is interesting about it>`. Without a comment, the agent analyses the reference and writes one. Images need an agent with vision; video and audio need a tool that can read them, otherwise the agent asks you for a comment. Local files are copied to `.assets/` in the knowledge folder.
+
 ## Maintenance
     python <skill folder>/scripts/kb_check.py <knowledge folder>
     python <skill folder>/scripts/kb_check.py <knowledge folder> --stale-days 365
 
-The first finds broken links, unlisted files and exceeded limits. The second also lists old files, which you can review or delete.
+The first finds broken links, missing reference files, unlisted files and exceeded limits. The second also lists old files, which you can review or delete.

@@ -18,7 +18,7 @@
       "name": "experimental",
       "source": "./plugins/experimental",
       "description": "Skills: brandkit, design-taste-frontend, full-output-enforcement, gpt-taste, high-end-visual-design, image-to-code, imagegen-frontend-mobile, imagegen-frontend-web, industrial-brutalist-ui, knowledge-base, minimalist-ui, redesign-existing-projects, stitch-design-taste, test-freshness",
-      "version": "0.1.3"
+      "version": "0.1.4"
     },
     {
       "name": "frontend",
