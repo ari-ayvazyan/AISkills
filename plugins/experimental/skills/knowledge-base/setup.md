@@ -20,11 +20,10 @@ A skill only loads when the agent decides it fits, and agents often do not think
 
 ```Use the knowledge-base skill: search it before non-trivial work in a field it may cover, and when a task ends, write to the knowledge base only when asked to do so.```
 
-## Ingesting sources
-Ask the agent, for example: `Ingest this into the knowledge base: <link, file path or pasted text>`. It can only open what it has access to: links need a web tool, emails need a mail connector or pasted text.
+## Saving
+Ask the agent, for example: `Save this to the knowledge base: <learning, link, file path or pasted text>`. It can only open what it has access to: links need a web tool, emails need a mail connector or pasted text.
 
-## Ingesting references
-Ask the agent, for example: `Ingest as reference: <link or file path> - <what is interesting about it>`. Without a comment, the agent analyses the reference and writes one. Images need an agent with vision; video and audio need a tool that can read them, otherwise the agent asks you for a comment. Local files are copied to `.assets/` in the knowledge folder.
+To keep something as a reference, say so: `Save as reference: <link or file path> - <what is interesting about it>`. Without a comment, the agent analyses the reference and writes one. Images need an agent with vision; video and audio need a tool that can read them, otherwise the agent asks you for a comment. Local files are copied to `.assets/` in the knowledge folder.
 
 ## Maintenance
     python <skill folder>/scripts/kb_check.py <knowledge folder>
