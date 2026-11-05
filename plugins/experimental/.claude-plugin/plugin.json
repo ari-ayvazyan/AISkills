@@ -1,7 +1,7 @@
 {
   "name": "experimental",
-  "description": "Skills: brandkit, design-taste-frontend, full-output-enforcement, gpt-taste, high-end-visual-design, image-to-code, imagegen-frontend-mobile, imagegen-frontend-web, industrial-brutalist-ui, knowledge-base, minimalist-ui, redesign-existing-projects, stitch-design-taste, test-freshness",
-  "version": "0.1.5",
+  "description": "Skills: brandkit, design-taste-frontend, full-output-enforcement, game-ui-design, gpt-taste, high-end-visual-design, image-to-code, imagegen-frontend-mobile, imagegen-frontend-web, industrial-brutalist-ui, knowledge-base, minimalist-ui, redesign-existing-projects, stitch-design-taste, test-freshness",
+  "version": "0.1.6",
   "author": {
     "name": "Ari Ayvazyan"
   }
