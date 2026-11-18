@@ -30,7 +30,7 @@
       "name": "code-agent-skills",
       "source": "./plugins/code-agent-skills",
       "description": "Coding Agent Skills",
-      "version": "0.1.14"
+      "version": "0.1.15"
     }
   ]
 }

@@ -155,7 +155,7 @@ Web/Chat Skills
 | [i-have-adhd](plugins/chat-skills/skills/i-have-adhd) | 👤 | Shape output for a reader with ADHD: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible. Invoke with /i-have-adhd; stays on until "stop adhd mode". | [Source](https://github.com/ayghri/i-have-adhd/tree/7b9069b39972e269e61bd95c2f66ebb90cac6a02/skills/i-have-adhd) | [License](https://github.com/ayghri/i-have-adhd/blob/7b9069b39972e269e61bd95c2f66ebb90cac6a02/LICENSE) |
 | [micro-spec](plugins/chat-skills/skills/micro-spec) | 👤 | Turn a project idea into a minimal, on-point SPEC.md (caveman style — least text, max info). Use when the user runs /micro-spec or asks to spec out / document a project idea. | - | - |
 
-### code-agent-skills · v0.1.14
+### code-agent-skills · v0.1.15
 
 Coding Agent Skills
 
@@ -167,7 +167,7 @@ Coding Agent Skills
 |---|---|---|---|---|
 | [archify](plugins/code-agent-skills/skills/archify) | 👤 | Create polished, validated architecture, workflow, sequence, data-flow, and lifecycle/state diagrams. Use when the user asks to visualize system architecture, infrastructure, cloud/security/network topology, technical workflows, API call sequences, request lifecycles, data pipelines, ETL/ELT, data lineage, state machines, or to convert/beautify Mermaid. | [Source](https://github.com/tt-a1i/archify/tree/c6519401f7b91b9d43011657880893b0a8955548/archify) | [License](https://github.com/tt-a1i/archify/blob/c6519401f7b91b9d43011657880893b0a8955548/archify/LICENSE) |
 | [architecture-decisions](plugins/code-agent-skills/skills/architecture-decisions) | 🤖👤 | ALWAYS Execute this skills before deciding any technical/architectural matter, to avoid reintroducing already-solved issues. | - | - |
-| [architecture-plan](plugins/code-agent-skills/skills/architecture-plan) | 🤖👤 | Generate concise, mobile-friendly architecture cards for reviewing plans, proposed changes, and commit overviews without reading raw code. | - | - |
+| [architecture-plan](plugins/code-agent-skills/skills/architecture-plan) | 🤖👤 | Generate concise, mobile-friendly architecture cards for reviewing plans, proposed changes, finished work and commit overviews. | - | - |
 | [diagnosing-bugs](plugins/code-agent-skills/skills/diagnosing-bugs) | 🤖👤 | Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/diagnosing-bugs) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
 | [gauntlet-loop](plugins/code-agent-skills/skills/gauntlet-loop) | 👤 | Create a .md file for a goal driven gauntlet loop | - | - |
 | [image-gen-edit-agy](plugins/code-agent-skills/skills/image-gen-edit-agy) | 🤖👤 | Generate or modify an image with ai by using agy | - | - |
