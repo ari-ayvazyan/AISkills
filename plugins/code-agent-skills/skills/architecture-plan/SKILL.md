@@ -1,6 +1,6 @@
 ---
 name: architecture-plan
-description: Generate concise, mobile-friendly architecture cards for reviewing plans, proposed changes, and commit overviews without reading raw code.
+description: Generate concise, mobile-friendly architecture cards for reviewing plans, proposed changes, finished work and commit overviews.
 ---
 
 # Architecture Card Review
@@ -9,13 +9,11 @@ Use this skill **if and only if a high-level architectural review is requested**
 - A plan requested by the user (e.g., plan mode, "plan this", "propose how").
 - A suggested change awaiting user review or approval.
 - An architecture overview of commits (generate one card per commit, including the commit hash and date).
+- Work was finished, and you want to communicate to the user what has changed.
 
-**Do not use this skill** after ordinary implementation work or when answering general questions.
 
 ## Core Principles
-
-1. **Finished Plan Only:** Clarify all open decisions and obtain necessary approvals *before* generating the card, never inside the card itself.
-2. **Mobile-First Brevity:** The card must fit on a single phone screen. 
+1. **Mobile-First Brevity:** The card must fit on a single phone screen. 
    - **No tables.**
    - Use concise phrases instead of full sentences.
    - Include only what a reviewer must not miss.
