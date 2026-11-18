@@ -13,10 +13,10 @@ Add the marketplace, then install any plugin by name:
 ```
 
 ```
-/plugin install code-agent-skills@AISkills
 /plugin install experimental@AISkills
 /plugin install frontend@AISkills
 /plugin install chat-skills@AISkills
+/plugin install code-agent-skills@AISkills
 ```
 
 ### Claude Code web & app
@@ -49,7 +49,7 @@ Serve the skills live over MCP with [ecp-bridge](https://www.npmjs.com/package/e
         "-y",
         "ecp-bridge",
         "ari-ayvazyan/AISkills",
-        "code-agent-skills,experimental,frontend,chat-skills"
+        "experimental,frontend,chat-skills,code-agent-skills"
       ]
     }
   }
@@ -80,40 +80,6 @@ Each plugin lists its skills with a summary, source, and license.
 > | 🤖👤 | invoked either way: Claude can load it on its own, and you can call it with `/name` |
 > | 🤖 | self-invoked by the agent only, hidden from the `/` menu |
 > | 👤 | user-invoked only, Claude will not load it on its own |
-
-### code-agent-skills · v0.1.13
-
-Coding Agent Skills
-
-```
-/plugin install code-agent-skills@AISkills
-```
-
-| Skill | Use | What it does | Source | License |
-|---|---|---|---|---|
-| [archify](plugins/code-agent-skills/skills/archify) | 👤 | Create polished, validated architecture, workflow, sequence, data-flow, and lifecycle/state diagrams. Use when the user asks to visualize system architecture, infrastructure, cloud/security/network topology, technical workflows, API call sequences, request lifecycles, data pipelines, ETL/ELT, data lineage, state machines, or to convert/beautify Mermaid. | [Source](https://github.com/tt-a1i/archify/tree/c6519401f7b91b9d43011657880893b0a8955548/archify) | [License](https://github.com/tt-a1i/archify/blob/c6519401f7b91b9d43011657880893b0a8955548/archify/LICENSE) |
-| [architecture-decisions](plugins/code-agent-skills/skills/architecture-decisions) | 🤖👤 | ALWAYS Execute this skills before deciding any technical/architectural matter, to avoid reintroducing already-solved issues. | - | - |
-| [diagnosing-bugs](plugins/code-agent-skills/skills/diagnosing-bugs) | 🤖👤 | Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/diagnosing-bugs) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
-| [gauntlet-loop](plugins/code-agent-skills/skills/gauntlet-loop) | 👤 | Create a .md file for a goal driven gauntlet loop | - | - |
-| [image-gen-edit-agy](plugins/code-agent-skills/skills/image-gen-edit-agy) | 🤖👤 | Generate or modify an image with ai by using agy | - | - |
-| [svg-critic](plugins/code-agent-skills/skills/svg-critic) | 🤖👤 | Advanced instructions, protocols, and evaluation rubrics for SVG critique agents auditing vector graphic recreations against reference images in a Gauntlet Loop. | - | - |
-| [tdd](plugins/code-agent-skills/skills/tdd) | 🤖👤 | Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/tdd) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
-| [teach](plugins/code-agent-skills/skills/teach) | 👤 | Teach the user a new skill or concept, within this workspace. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/productivity/teach) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
-
-**meta**
-
-| Skill | Use | What it does | Source | License |
-|---|---|---|---|---|
-| [create-agent-skills](plugins/code-agent-skills/skills/create-agent-skills) | 👤 | Expert guidance for Claude Code Skills. Use when working with SKILL.md files, authoring new skills, improving existing skills, or understanding skill structure. | - | - |
-| [init-agent-project](plugins/code-agent-skills/skills/init-agent-project) | 👤 | Bootstraps a project for AI-agent usage in any agent. | - | - |
-| [mcp-builder](plugins/code-agent-skills/skills/mcp-builder) | 👤 | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK). | - | - |
-
-**planning**
-
-| Skill | Use | What it does | Source | License |
-|---|---|---|---|---|
-| [codebase-design](plugins/code-agent-skills/skills/codebase-design) | 🤖👤 | Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/codebase-design) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
-| [improve-codebase-architecture](plugins/code-agent-skills/skills/improve-codebase-architecture) | 👤 | Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/improve-codebase-architecture) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
 
 ### experimental · v0.1.6
 
@@ -188,6 +154,41 @@ Web/Chat Skills
 | [humanizer](plugins/chat-skills/skills/humanizer) | 🤖👤 | Remove signs of AI-generated writing from text. Use when editing or reviewing text to make it sound more natural and human-written. Based on Wikipedia's comprehensive "Signs of AI writing" guide. Detects and fixes patterns including: inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary words, passive voice, negative parallelisms, and filler phrases. | [Source](https://github.com/blader/humanizer/tree/523374dee72d67c7b2b5f858ea0094ffda49c3ac) | [License](https://github.com/blader/humanizer/blob/523374dee72d67c7b2b5f858ea0094ffda49c3ac/LICENSE) |
 | [i-have-adhd](plugins/chat-skills/skills/i-have-adhd) | 👤 | Shape output for a reader with ADHD: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible. Invoke with /i-have-adhd; stays on until "stop adhd mode". | [Source](https://github.com/ayghri/i-have-adhd/tree/7b9069b39972e269e61bd95c2f66ebb90cac6a02/skills/i-have-adhd) | [License](https://github.com/ayghri/i-have-adhd/blob/7b9069b39972e269e61bd95c2f66ebb90cac6a02/LICENSE) |
 | [micro-spec](plugins/chat-skills/skills/micro-spec) | 👤 | Turn a project idea into a minimal, on-point SPEC.md (caveman style — least text, max info). Use when the user runs /micro-spec or asks to spec out / document a project idea. | - | - |
+
+### code-agent-skills · v0.1.14
+
+Coding Agent Skills
+
+```
+/plugin install code-agent-skills@AISkills
+```
+
+| Skill | Use | What it does | Source | License |
+|---|---|---|---|---|
+| [archify](plugins/code-agent-skills/skills/archify) | 👤 | Create polished, validated architecture, workflow, sequence, data-flow, and lifecycle/state diagrams. Use when the user asks to visualize system architecture, infrastructure, cloud/security/network topology, technical workflows, API call sequences, request lifecycles, data pipelines, ETL/ELT, data lineage, state machines, or to convert/beautify Mermaid. | [Source](https://github.com/tt-a1i/archify/tree/c6519401f7b91b9d43011657880893b0a8955548/archify) | [License](https://github.com/tt-a1i/archify/blob/c6519401f7b91b9d43011657880893b0a8955548/archify/LICENSE) |
+| [architecture-decisions](plugins/code-agent-skills/skills/architecture-decisions) | 🤖👤 | ALWAYS Execute this skills before deciding any technical/architectural matter, to avoid reintroducing already-solved issues. | - | - |
+| [architecture-plan](plugins/code-agent-skills/skills/architecture-plan) | 🤖👤 | Generate concise, mobile-friendly architecture cards for reviewing plans, proposed changes, and commit overviews without reading raw code. | - | - |
+| [diagnosing-bugs](plugins/code-agent-skills/skills/diagnosing-bugs) | 🤖👤 | Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/diagnosing-bugs) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
+| [gauntlet-loop](plugins/code-agent-skills/skills/gauntlet-loop) | 👤 | Create a .md file for a goal driven gauntlet loop | - | - |
+| [image-gen-edit-agy](plugins/code-agent-skills/skills/image-gen-edit-agy) | 🤖👤 | Generate or modify an image with ai by using agy | - | - |
+| [svg-critic](plugins/code-agent-skills/skills/svg-critic) | 🤖👤 | Advanced instructions, protocols, and evaluation rubrics for SVG critique agents auditing vector graphic recreations against reference images in a Gauntlet Loop. | - | - |
+| [tdd](plugins/code-agent-skills/skills/tdd) | 🤖👤 | Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/tdd) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
+| [teach](plugins/code-agent-skills/skills/teach) | 👤 | Teach the user a new skill or concept, within this workspace. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/productivity/teach) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
+
+**meta**
+
+| Skill | Use | What it does | Source | License |
+|---|---|---|---|---|
+| [create-agent-skills](plugins/code-agent-skills/skills/create-agent-skills) | 👤 | Expert guidance for Claude Code Skills. Use when working with SKILL.md files, authoring new skills, improving existing skills, or understanding skill structure. | - | - |
+| [init-agent-project](plugins/code-agent-skills/skills/init-agent-project) | 👤 | Bootstraps a project for AI-agent usage in any agent. | - | - |
+| [mcp-builder](plugins/code-agent-skills/skills/mcp-builder) | 👤 | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK). | - | - |
+
+**planning**
+
+| Skill | Use | What it does | Source | License |
+|---|---|---|---|---|
+| [codebase-design](plugins/code-agent-skills/skills/codebase-design) | 🤖👤 | Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/codebase-design) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
+| [improve-codebase-architecture](plugins/code-agent-skills/skills/improve-codebase-architecture) | 👤 | Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick. | [Source](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills/engineering/improve-codebase-architecture) | [License](https://github.com/mattpocock/skills/blob/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/LICENSE) |
 
 ---
 

@@ -9,12 +9,6 @@
   },
   "plugins": [
     {
-      "name": "code-agent-skills",
-      "source": "./plugins/code-agent-skills",
-      "description": "Coding Agent Skills",
-      "version": "0.1.13"
-    },
-    {
       "name": "experimental",
       "source": "./plugins/experimental",
       "description": "Skills: brandkit, design-taste-frontend, full-output-enforcement, game-ui-design, gpt-taste, high-end-visual-design, image-to-code, imagegen-frontend-mobile, imagegen-frontend-web, industrial-brutalist-ui, knowledge-base, minimalist-ui, redesign-existing-projects, stitch-design-taste, test-freshness",
@@ -31,6 +25,12 @@
       "source": "./plugins/chat-skills",
       "description": "Web/Chat Skills",
       "version": "0.1.16"
+    },
+    {
+      "name": "code-agent-skills",
+      "source": "./plugins/code-agent-skills",
+      "description": "Coding Agent Skills",
+      "version": "0.1.14"
     }
   ]
 }
